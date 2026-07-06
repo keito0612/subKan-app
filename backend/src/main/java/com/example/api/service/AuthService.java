@@ -31,7 +31,7 @@ public class AuthService {
         return new AuthResponse("ログイン成功", token);
     }
 
-    public MessageResponse signUp(SignUpRequest request) {
+    public AuthResponse signUp(SignUpRequest request) {
         if (userRepository.existsByEmail(request.getEmail())) {
             throw new RuntimeException("このメールアドレスは既に登録されています");
         }
@@ -41,8 +41,9 @@ public class AuthService {
         user.setEmail(request.getEmail());
         user.setPassword(passwordEncoder.encode(request.getPassword()));
 
-        userRepository.save(user);
+        User savedUser = userRepository.save(user);
 
-        return new MessageResponse("新規登録成功");
+        String token = jwtUtil.generateToken(savedUser.getUserId(), savedUser.getEmail());
+        return new AuthResponse("新規登録成功", token);
     }
 }

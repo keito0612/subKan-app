@@ -1,0 +1,78 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background-color: white;
+    border-radius: 12px;
+    padding: 32px;
+    min-width: 300px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 16px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.success {
+    background-color: #10b981;
+}
+
+.error {
+    background-color: #ef4444;
+}
+
+.title {
+    margin: 0 0 8px;
+    font-size: 20px;
+    color: #333;
+}
+
+.message {
+    margin: 0 0 24px;
+    color: #666;
+    font-size: 14px;
+}
+
+.button {
+    padding: 12px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    transition: opacity 0.2s;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.successButton {
+    background-color: #10b981;
+}
+
+.errorButton {
+    background-color: #ef4444;
+}

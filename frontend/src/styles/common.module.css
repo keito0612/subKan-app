@@ -1,0 +1,383 @@
+/* Common Form Styles */
+.container {
+    max-width: 450px;
+    margin: 60px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #6b7280;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.input {
+    padding: 14px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.2s;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #5fd3bc;
+    box-shadow: 0 0 0 3px rgba(127, 255, 212, 0.2);
+}
+
+.input::placeholder {
+    color: #9ca3af;
+}
+
+.select {
+    padding: 14px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 16px;
+    background: white;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.select:focus {
+    border-color: #5fd3bc;
+    box-shadow: 0 0 0 3px rgba(127, 255, 212, 0.2);
+}
+
+.primaryButton {
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #5fd3bc 0%, #3cb99c 100%);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+.primaryButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(127, 255, 212, 0.5);
+}
+
+.primaryButton:active {
+    transform: translateY(0);
+}
+
+.secondaryButton {
+    padding: 14px 24px;
+    background: white;
+    color: #374151;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+
+.secondaryButton:hover {
+    background: #f9fafb;
+    border-color: #d1d5db;
+}
+
+.dangerButton {
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+
+.dangerButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.buttonGroup > * {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.buttonGroup a {
+    display: block;
+    width: 100%;
+}
+
+.buttonGroup button,
+.buttonGroup .primaryButton,
+.buttonGroup .secondaryButton,
+.buttonGroup .dangerButton {
+    width: 100%;
+    margin-top: 0;
+}
+
+.link {
+    color: #3cb99c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.link:hover {
+    color: #2a9d7c;
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* List Page Styles */
+.listContainer {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 24px;
+}
+
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.pageTitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.addButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #5fd3bc 0%, #3cb99c 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.addButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(127, 255, 212, 0.5);
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableHeader {
+    background: #f8fafc;
+}
+
+.tableHeader th {
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.tableBody tr {
+    border-top: 1px solid #f1f5f9;
+    transition: background 0.2s;
+}
+
+.tableBody tr:hover {
+    background: #f8fafc;
+}
+
+.tableBody td {
+    padding: 16px 20px;
+    font-size: 14px;
+    color: #374151;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badgeMonthly {
+    background: rgba(127, 255, 212, 0.3);
+    color: #2a9d7c;
+}
+
+.badgeYearly {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.amount {
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.actionLink {
+    color: #3cb99c;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.actionLink:hover {
+    background: rgba(127, 255, 212, 0.15);
+}
+
+.emptyState {
+    text-align: center;
+    padding: 60px 20px;
+    color: #6b7280;
+}
+
+.emptyIcon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+/* Detail Page Styles */
+.detailContainer {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 24px;
+}
+
+.detailCard {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    padding: 32px;
+}
+
+.detailHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.detailTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.detailGrid {
+    display: grid;
+    gap: 24px;
+}
+
+.detailItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.detailLabel {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.detailValue {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.detailActions {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.backLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 24px;
+    transition: color 0.2s;
+}
+
+.backLink:hover {
+    color: #374151;
+}
